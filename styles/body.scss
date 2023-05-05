@@ -1,0 +1,56 @@
+@import './config.scss';
+
+.container-body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .filter{
+
+        width: 100%;
+        padding: 0 8px;
+        @media screen and (min-width: $mediaQueryDesktop){
+            padding: 0 112px;
+        }
+
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        padding: 0 8px;
+        @media screen and (min-width: $mediaQueryDesktop){
+            padding: 0 112px;
+        }
+    }
+
+    .notasks {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $primaryColor;
+        font-size: 14px;
+        
+        img {
+            width: 245px;
+            margin-bottom: 12px;
+        }
+
+        @media screen and (min-width: $mediaQueryDesktop){
+            font-size: 20px;
+            img {
+                width: 390px;
+                margin-bottom: 31px;
+            }
+
+            
+
+        }
+
+    }
+}
